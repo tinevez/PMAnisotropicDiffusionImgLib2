@@ -1,4 +1,4 @@
-Perone & Malik anisotropic diffusion for Icy, based on ImgLib2.
+Perona & Malik anisotropic diffusion for Icy, based on ImgLib2.
 ===============================================================
 
 An Icy plugin based on ImgLib2 that implements Perona and Malik anisotropic diffusion.
@@ -35,6 +35,5 @@ DiffusionFunction interface. Users can specify their own function. Two
 functions are offered, taken from Perona and Malik original paper:
 StrongEdgeEnhancer and WideRegionEnhancer.
 
-This implementation is multithreaded; the number of used thread can be
-specified with the setNumThreads(int) or setNumThreads() methods.
+This implementation is multithreaded.
 
