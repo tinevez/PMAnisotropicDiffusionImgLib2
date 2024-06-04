@@ -24,3 +24,9 @@ old_pom.xml
 
 # Eclipse
 .project
+
+# Icy stuff - when you launch Icy from the code
+plugins
+setting.xml
+workspace
+
