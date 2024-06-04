@@ -21,3 +21,6 @@ old_pom.xml
 *.iws
 *.iml
 *.ipr
+
+# Eclipse
+.project
