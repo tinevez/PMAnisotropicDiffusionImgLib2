@@ -22,15 +22,13 @@ import plugins.tinevez.imglib2icy.ImgLib2IcySplitSequenceAdapter;
 public class PMAnisotropicDiffusionImgLib2< T extends RealType< T >> extends EzPlug implements EzStoppable
 {
 
-
-
 	private final EzVarInteger nThreads = new EzVarInteger( "Use N threads", Runtime.getRuntime().availableProcessors() / 2, 1, Runtime.getRuntime().availableProcessors(), 1 );
 
 	private final EzVarEnum< DiffEnum > diffusionType = new EzVarEnum< DiffEnum >( "Diffusion type", DiffEnum.values() );
 
 	private final EzVarDouble kappa = new EzVarDouble( "Kappa", 10, 1e-3, Double.MAX_VALUE, 1e-3 );
 
-	private final EzVarDouble dt = new EzVarDouble( "Æt", 0.15, 1e-2, 100, 1e-2 );
+	private final EzVarDouble dt = new EzVarDouble( "ï¿½t", 0.15, 1e-2, 100, 1e-2 );
 
 	private final EzVarInteger nIterations = new EzVarInteger( "N iterations", 5, 1, 100000, 1 );
 
@@ -161,5 +159,4 @@ public class PMAnisotropicDiffusionImgLib2< T extends RealType< T >> extends EzP
 			return name;
 		}
 	}
-
 }
